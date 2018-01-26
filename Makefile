@@ -1,6 +1,6 @@
 BIN=/home/eyal/dev/gbdk-n-master/bin
 OBJ=./obj
-GAME=ufo
+GAME=hagiga-batsolelet
 
 build:
 	mkdir -p $(OBJ)
