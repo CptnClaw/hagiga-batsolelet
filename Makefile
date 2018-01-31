@@ -1,4 +1,4 @@
-BIN=/home/eyal/dev/gbdk-n-master/bin
+BIN=../../dev/gbdk-n-master/bin
 OBJ=./obj
 GAME=hagiga-batsolelet
 

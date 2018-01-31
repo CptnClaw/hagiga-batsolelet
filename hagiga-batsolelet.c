@@ -122,11 +122,6 @@ void main()
     up_y = 72;
     down_x = 40;
     down_y = 82;
-    
-    // Turn on sound
-    NR50_REG = 0xFF;
-    NR51_REG = 0xFF;
-    NR52_REG = 0x80;
 
     // Initialize tiles
     SPRITES_8x8;
@@ -159,7 +154,12 @@ void main()
     // Initialize receiving state
     state = RECEIVE;
     msg_num = 1;
-    msg_length = 0;  
+    msg_length = 0;
+
+    // Turn on sound
+    NR52_REG = 0x80;
+    NR51_REG = 0xFF;
+    NR50_REG = 0xFF;
 
     while(1)
     {
